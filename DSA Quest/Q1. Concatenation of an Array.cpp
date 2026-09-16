@@ -7,12 +7,12 @@
 class Solution {
 public:
     vector<int> getConcatenation(vector<int>& nums) {
-        int n=nums.size();
-        vector <int> ans(2*n);
-        for (int i = 0; i<n; i++){
-            ans[i]=nums[i];
-            ans[i+n]=nums[i];
+        int n=nums.size(); // Gets the Size
+        vector <int> ans(2*n); // Double The size
+        for (int i = 0; i<n; i++){  // Loop
+            ans[i]=nums[i];  // Ans array is Nums array 
+            ans[i+n]=nums[i];    // If the n is 3 then ans starts from 4 and has the same value of nums
         }
-    return ans;
+    return ans; // The right scopew of return
     }
 };
